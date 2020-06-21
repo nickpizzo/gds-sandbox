@@ -1,5 +1,5 @@
 import React from "react"
-import About from "../components/Test"
+import About from "../components/test"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
