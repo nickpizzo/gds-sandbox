@@ -1,7 +1,12 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/browser-apis/
- */
+// Fullpagejs responsiveWidth slide flicker fix
+exports.shouldUpdateScroll = ({
+  routerProps: { location },
+  getSavedScrollPosition
+}) => {
 
-// You can delete this file if you're not using it
+  if (location.hash) {
+    return false;
+  }
+
+  return true;
+};
