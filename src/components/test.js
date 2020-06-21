@@ -87,7 +87,7 @@ class About extends React.Component {
           // pluginWrapper={pluginWrapper}
 
           // fullpage options
-          licenseKey={process.env.FULLPAGEJS_LICENSE_KEY} // Get one from https://alvarotrigo.com/fullPage/pricing/
+          licenseKey={`${process.env.FULLPAGEJS_LICENSE_KEY}`} // Get one from https://alvarotrigo.com/fullPage/pricing/
           // navigation
           anchors={['firstPage', 'secondPage', 'thirdPage']}
           sectionSelector={SECTION_SEL}
